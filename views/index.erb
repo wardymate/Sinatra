@@ -1,9 +1,13 @@
 <div style='border: 3px dashed red'>
   <% if @visitor %>
-  Hello, <%= @visitor %>!
+    Hello, <%= @visitor %>!
+  <% else %>
+    <form action="/hello">
+    My name is <%= @name %>.
+    What's your name?
+    <input type="text" name="name">
+    <input type="submit">
+    </form>
   <% end %>
-<% if @name %>
-  My name is <%= @name %>
-  <% end %>
-	<img src='http://bit.ly/1eze8aE'>
+	<img src='http://stylonica.com/wp-content/uploads/2014/03/Cute-Cats-cats-33440930-1280-800.jpg'>
 </div>
